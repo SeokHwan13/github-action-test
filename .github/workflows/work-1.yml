@@ -1,8 +1,14 @@
 name: work-1
 on:
   push:
-    branches:
-      - main
+      paths:
+      - '.github/workflows/**'
+      - 'src/**'
+      - 'build.gradle'
+      - 'build.gradle.kts'
+      - 'Dockerfile'
+      branches:
+        - main
 jobs:
   hello1:
     runs-on: ubuntu-latest
